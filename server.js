@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 
 const db = knex({
   client: 'pg',
-  connectionString: 'postgresql-aerodynamic-66735',
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   }
